@@ -1,0 +1,27 @@
+<div class="d-flex">
+  <div class="card" style="width: 50%">
+    <div class="card-header">Usuario: pepe</div>
+    <ul class="list-group list-group-flush">
+      <textarea
+        class="form-control"
+        placeholder="Mensaje"
+        id="floatingTextarea"
+        (input)="enviarMensj1($event)"
+      ></textarea>
+      <button (click)="send1()" class="btn btn-primary">Primary</button>
+
+    </ul>
+  </div>
+  <div class="card" style="width: 50%">
+    <div class="card-header">Usuario: maria</div>
+    <ul class="list-group list-group-flush">
+      <textarea
+        class="form-control"
+        placeholder="Mensaje"
+        id="floatingTextarea"
+        (input)="enviarMensj2($event)"
+      ></textarea>
+    </ul>
+    <button type="button" (click)="send2()" class="btn btn-primary">Primary</button>
+  </div>
+</div>
